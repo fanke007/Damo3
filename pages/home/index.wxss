@@ -1,0 +1,91 @@
+/* 样式的载入 */
+@import "/template/song/song.wxss";
+@import "/template/public/bottom-player.wxss";
+
+/* pages/home/index.wxss */
+/* header头部 */
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #b3d4db;
+    color: #fff;
+    padding-bottom:20rpx;
+}
+
+.header view {
+    padding: 0 40rpx 10rpx;
+}
+
+.header .navslip {
+    padding: 0;
+    position: absolute;
+    height: 4rpx;
+    background-color: rgb(231, 226, 226);
+}
+
+/* banner */
+.home-banner{
+  background: linear-gradient(#b3d4db,#b3d4db)
+               no-repeat left top/ 100% 200rpx;
+}
+.home-banner swiper{
+  height: 300rpx;
+}
+.home-banner swiper-item{
+  box-sizing: border-box;
+  padding: 0 24rpx;
+}
+.home-banner image{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+/* 国家地区 */
+.region-type{
+  position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 25rpx 0 30rpx;
+}
+.region-type navigator image{
+ width: 76rpx;
+}
+.region-type navigator text{
+   display: block;
+    text-align: center;
+}
+.region-type .list {
+    position: absolute;
+    bottom: 0rpx;
+    width: 95%;
+    margin: auto;
+    height: 4rpx;
+    background-color: #beacac;
+}
+
+/* 热门歌曲 */
+.home-menu{
+  margin-top: 50rpx;
+  background-color:rgba(214, 18, 34, 0.815)
+}
+.hmenu-item{}
+.hmenu-item + .hmenu-item{
+  margin-top: 30rpx;
+}
+.hmenu-head{
+  padding-bottom: 20rpx;
+}
+.hmenu-head image{
+  width: 70rpx;
+  height: 70rpx;
+  vertical-align: bottom;
+}
+.hmenu-head text{
+  vertical-align: bottom;
+}
+.hmenu-body{
+  padding: 0 20rpx;
+}
